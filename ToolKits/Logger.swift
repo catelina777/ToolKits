@@ -31,7 +31,7 @@ public struct Logger {
 
     fileprivate init() {}
 
-    func info(_ message: Any?,
+    public func info(_ message: Any?,
               functionName: StaticString = #function,
               fileName: StaticString = #file,
               lineNumber: Int = #line) {
@@ -42,7 +42,7 @@ public struct Logger {
                 lineNumber: lineNumber)
     }
 
-    func debug(_ message: Any?,
+    public func debug(_ message: Any?,
                functionName: StaticString = #function,
                fileName: StaticString = #file,
                lineNumber: Int = #line) {
@@ -53,7 +53,7 @@ public struct Logger {
                 lineNumber: lineNumber)
     }
 
-    func error(_ message: Any?,
+    public func error(_ message: Any?,
                functionName: StaticString = #function,
                fileName: StaticString = #file,
                lineNumber: Int = #line) {
@@ -64,7 +64,7 @@ public struct Logger {
                 lineNumber: lineNumber)
     }
 
-    func fault(_ message: Any?,
+    public func fault(_ message: Any?,
                functionName: StaticString = #function,
                fileName: StaticString = #file,
                lineNumber: Int = #line) {
@@ -75,7 +75,7 @@ public struct Logger {
                 lineNumber: lineNumber)
     }
 
-    func `default`(_ message: Any?,
+    public func `default`(_ message: Any?,
                    functionName: StaticString = #function,
                    fileName: StaticString = #file,
                    lineNumber: Int = #line) {
