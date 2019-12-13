@@ -33,7 +33,7 @@ public enum Haptic {
     case notification(HapticFeedbackType)
     case selection
 
-    func generate() {
+    public func generate() {
         switch self {
         case .impact(let style):
             let generator = UIImpactFeedbackGenerator(style: style.value)
